@@ -13,7 +13,9 @@ from . import export
 
 def fast_list_append(agen, bgen):
     """Append bgen to the end of agen"""
+    time.sleep(1)
     yield from agen
+    time.sleep(1)
     yield from bgen
     print("Finished Appending")
 
