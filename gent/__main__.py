@@ -3,6 +3,7 @@ import sys
 from . import slow_chain
 from . import fast_chain
 
+
 def main():
     args = sys.argv
     nargs = len(args)

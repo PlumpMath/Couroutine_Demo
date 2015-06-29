@@ -12,7 +12,7 @@ def slow_list_append(alist, blist):
     # Append the elements of blist to alist
     for elem in blist:
         alist.append(elem)
-        #time.sleep(1)
+        time.sleep(1)
     print("Finished Appending")
     return alist
 
@@ -20,7 +20,7 @@ def slow_list_power_filter(alist, power):
     # Raise each element in a list to power.
     for idx, elem in enumerate(alist):
         alist[idx] = elem ** power
-        #time.sleep(1)
+        time.sleep(1)
     print("Finished Power Filtering")
     return alist
 
@@ -36,8 +36,8 @@ def slow_function_chain():
     blist = [153, 729, 12, 1634, 42, 300112, 64]
     power = 5
     
-    #sla = slow_list_append(alist, blist)
-    #slpf = slow_list_power_filter(sla, power)
+    sla = slow_list_append(alist, blist)
+    slpf = slow_list_power_filter(sla, power)
     clist = alist + blist
     sls = slow_list_sort(clist)
     
