@@ -32,6 +32,7 @@ def slow_list_sort(alist):
 
 @export
 def slow_function_chain():
+    start = time.time()
     alist = [0, 100, 200, 300, 400, 500, 600, 700, 800, 900]
     blist = [153, 729, 12, 1634, 42, 300112, 64]
     power = 5
@@ -43,6 +44,8 @@ def slow_function_chain():
     
     for elem in iter(sls):
         print(elem, end='\n')
+    end = time.time()
+    print("Slow Chain Exec Time: ", end-start)
 
 
 if __name__ == '__main__':

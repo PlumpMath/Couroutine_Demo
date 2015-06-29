@@ -37,6 +37,7 @@ def fast_list_sort(agen):
 @export
 def fast_function_chain():
     """Test the coroutine function chain."""
+    start = time.time()
     agen = [0, 100, 200, 300, 400, 500, 600, 700, 800, 900]
     bgen = [153, 729, 12, 1634, 42, 300112, 64]
     power = 5
@@ -50,6 +51,8 @@ def fast_function_chain():
             pass
         else:
             print(item)
+    end = time.time()
+    print("Fast Chain Exec Time: ", end-start)
     
 if __name__ == '__main__':
     fast_function_chain()
