@@ -38,6 +38,7 @@ order to pretend it's working hard and to give us something to watch.
 #### How do I use the demo?
 It's easy! There are two demonstrations. Each demonstration performs
 three functions on a lists of integers. 
+
 1. First two lists are added together; in other words the elements from one 
 list are added to the end of another list.
 2. Next each element in the list is raised to a power (the details aren't really important).
