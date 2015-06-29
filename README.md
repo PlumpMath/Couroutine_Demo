@@ -46,15 +46,15 @@ list are added to the end of another list.
 ##### Blocking Demo
 Each function blocks so the execution time is the product of all three
 operations.
-'''
+```
 $ python -m gent slow
-'''
+```
 
 ##### Non-Blocking Demo
 Each function yields the result as soon as it's computed.
-'''
+```
 $ python -m gent fast
-'''
+```
 
 ### Exercises for the Reader
 1. Fix the sort function in fast_chain.py so that it doesn't block but
